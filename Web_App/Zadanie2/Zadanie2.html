@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta</title>
+    <style>
+        body {
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+        hr {
+            border: 1px solid #000;
+        }
+        .question {
+            font-weight: bold;
+            color: blue;
+        }
+
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ankieta</h1>
+    <p><b>Prosimy o wypełnienie ankiety, która pozwoli nam lepiej ocenić grono osób zainteresowanych językiem HTML i publikowaniem w Internecie (Informacje mają jedynie statystyczny charakter i nie są udostępniane na zewnątrz)</b></p>
+    
+    <form>
+        <hr>
+        <label for="name" class="question">Imię i nazwisko lub jakikolwiek pseudonim:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email" class="question">Poczta elektroniczna (pole obowiązkowe):</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <hr>
+        <label class="question">Twoja płeć:</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kobieta</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Mężczyzna</label><br><br>
+
+        <hr>
+        <label class="question">Twój wiek:</label><br>
+        <input type="radio" id="age1" name="age" value="Do 20">
+        <label for="age1">Do 20</label><br>
+        <input type="radio" id="age2" name="age" value="21-30">
+        <label for="age2">21-30</label><br>
+        <input type="radio" id="age3" name="age" value="31-40">
+        <label for="age3">31-40</label><br>
+        <input type="radio" id="age4" name="age" value="41-50">
+        <label for="age4">41-50</label><br>
+        <input type="radio" id="age5" name="age" value="51-60">
+        <label for="age5">51-60</label><br>
+        <input type="radio" id="age6" name="age" value="ponad 60">
+        <label for="age6">ponad 60</label><br><br>
+
+        <hr>
+        <label class="question">Czym się zajmujesz?</label><br>
+        <input type="checkbox" id="job1" name="job" value="Uczę się">
+        <label for="job1">Uczę się</label><br>
+        <input type="checkbox" id="job2" name="job" value="Pracuję">
+        <label for="job2">Pracuję</label><br>
+        <input type="checkbox" id="job3" name="job" value="Jestem na emeryturze">
+        <label for="job3">Jestem na emeryturze</label><br>
+        <input type="checkbox" id="job4" name="job" value="Co innego">
+        <label for="job4">Co innego</label><br><br>
+
+        <hr>
+        <label class="question">Jak duża jest Twoja miejscowość (liczba mieszkańców)?</label><br>
+        <input type="radio" id="town1" name="town_size" value="Do 10 tys.">
+        <label for="town1">Do 10 tys.</label><br>
+        <input type="radio" id="town2" name="town_size" value="10-50 tys.">
+        <label for="town2">10-50 tys.</label><br>
+        <input type="radio" id="town3" name="town_size" value="50-100 tys.">
+        <label for="town3">50-100 tys.</label><br>
+        <input type="radio" id="town4" name="town_size" value="100 tys.-1 milion">
+        <label for="town4">100 tys.-1 milion</label><br>
+        <input type="radio" id="town5" name="town_size" value="Powyżej 1 miliona">
+        <label for="town5">Powyżej 1 miliona</label><br><br>
+
+        <hr>
+        <label class="question">Jakiej przeglądarki WWW używasz?</label><br>
+        <input type="checkbox" id="browser1" name="browser" value="Internet Explorer">
+        <label for="browser1">Internet Explorer</label><br>
+        <input type="checkbox" id="browser2" name="browser" value="Mozilla (Firefox)">
+        <label for="browser2">Mozilla (Firefox)</label><br>
+        <input type="checkbox" id="browser3" name="browser" value="Opera">
+        <label for="browser3">Opera</label><br>
+        <input type="checkbox" id="browser4" name="browser" value="Konqueror">
+        <label for="browser4">Konqueror</label><br>
+        <input type="checkbox" id="browser5" name="browser" value="Safari">
+        <label for="browser5">Safari</label><br>
+        <input type="checkbox" id="browser6" name="browser" value="Inna">
+        <label for="browser6">Inna</label><br><br>
+
+        <hr>
+        <label class="question">Jakie popularne czasopisma komputerowe czytasz?</label><br>
+        <input type="checkbox" id="magazine1" name="magazine" value="PCWorld Komputer">
+        <label for="magazine1">PCWorld Komputer</label><br>
+        <input type="checkbox" id="magazine2" name="magazine" value="Chip">
+        <label for="magazine2">Chip</label><br>
+        <input type="checkbox" id="magazine3" name="magazine" value="Enter">
+        <label for="magazine3">Enter</label><br>
+        <input type="checkbox" id="magazine4" name="magazine" value="PC Format">
+        <label for="magazine4">PC Format</label><br>
+        <input type="checkbox" id="magazine5" name="magazine" value="Internet">
+        <label for="magazine5">Internet</label><br>
+        <input type="checkbox" id="magazine6" name="magazine" value="Internet Maker">
+        <label for="magazine6">Internet Maker</label><br>
+        <input type="checkbox" id="magazine7" name="magazine" value="Komputer Świat">
+        <label for="magazine7">Komputer Świat</label><br>
+        <input type="checkbox" id="magazine8" name="magazine" value="Computerworld">
+        <label for="magazine8">Computerworld</label><br>
+        <input type="checkbox" id="magazine9" name="magazine" value="Czasopisma o grach">
+        <label for="magazine9">Czasopisma o grach</label><br>
+        <input type="checkbox" id="magazine10" name="magazine" value="Inne">
+        <label for="magazine10">Inne</label><br><br>
+
+        <hr>
+        <label class="question">Czy w domu masz zwykłe połączenie modemowe, czy też stałe łącze (m.in. SDI, Neostrada, Chello)?</label><br>
+        <input type="radio" id="connection1" name="connection_type" value="Zwykły modem">
+        <label for="connection1">Zwykły modem</label><br>
+        <input type="radio" id="connection2" name="connection_type" value="Stałe łącze">
+        <label for="connection2">Stałe łącze</label><br><br>
+
+        <hr>
+        <label class="question">Ile godzin tygodniowo pracujesz zazwyczaj w Internecie?</label><br>
+        <input type="radio" id="hours1" name="hours" value="Do 5 godzin">
+        <label for="hours1">Do 5 godzin</label><br>
+        <input type="radio" id="hours2" name="hours" value="5-10 godzin">
+        Oto dalsza część kodu HTML z liniami oddzielającymi sekcje oraz pytaniami pogrubionymi i w kolorze niebieskim, z odstępami od prawej oraz lewej krawędzi ekranu wynoszącymi 300px:
+
+```html
+        <input type="radio" id="hours2" name="hours" value="5-10 godzin">
+        <label for="hours2">5-10 godzin</label><br>
+        <input type="radio" id="hours3" name="hours" value="10-20 godzin">
+        <label for="hours3">10-20 godzin</label><br>
+        <input type="radio" id="hours4" name="hours" value="20-30 godzin">
+        <label for="hours4">20-30 godzin</label><br>
+        <input type="radio" id="hours5" name="hours" value="Więcej niż 30 godzin">
+        <label for="hours5">Więcej niż 30 godzin</label><br><br>
+
+        <hr>
+        <label class="question">Jak oceniasz kurs HTML?</label><br>
+        <input type="radio" id="rating1" name="rating" value="Bardzo dobry">
+        <label for="rating1">Bardzo dobry</label><br>
+        <input type="radio" id="rating2" name="rating" value="Dobry">
+        <label for="rating2">Dobry</label><br>
+        <input type="radio" id="rating3" name="rating" value="Dostateczny">
+        <label for="rating3">Dostateczny</label><br>
+        <input type="radio" id="rating4" name="rating" value="Niedostateczny">
+        <label for="rating4">Niedostateczny</label><br><br>
+
+        <hr>
+        <label class="question">Jeśli masz jakieś dodatkowe uwagi, życzenia i postulaty, wpisz je tutaj:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <hr>
+        <p class="question"><b>Jeśli skończyłeś wpisywać Informacje, kliknij przycisk <i>Wyślij</i>. Jeśli chcesz poprawnić wszystkie informacje kliknij przycisk <i>Usuń</i>.</b></p>
+        <button type="submit">Wyślij do nas informacje</button>
+        <button type="reset">Usuń wszystkie informacje</button>
+    </form>
+</body>
+</html>
